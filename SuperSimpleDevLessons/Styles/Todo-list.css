@@ -1,0 +1,21 @@
+body{
+  font-family: Arial;
+}
+.todo-input{
+  padding: 7px 7px;
+  margin-right: 5px;
+}
+.todo-date{
+  padding: 7px 7px;
+  margin-right: 5px;
+}
+.todo-add{
+  padding: 9px 30px;
+  color: white;
+  background-color: green;
+  border: none;
+}
+.todo-list{
+display: flex;
+flex-direction: column;
+}

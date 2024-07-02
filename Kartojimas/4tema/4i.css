@@ -1,0 +1,13 @@
+.button1,
+.button2{
+  border-color: black;
+  border-width: 2;
+  border-style: solid;
+}
+
+.button1{
+  background-color: rgb(237, 237, 20);
+}
+.button2{
+  background-color: orange;
+}

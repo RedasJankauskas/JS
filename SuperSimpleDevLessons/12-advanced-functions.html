@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>12-Advanced functions</title>
+
+</head>
+
+<body>
+
+<button onclick="changeStatus();" class="startButton">Start</button>
+<button onclick="changeStatus2();" class="cartButton">Add to Cart</button>
+<p class="notification"></p>
+
+<script>
+
+function changeStatus(){ //12c-d
+  let buttonElement=document.querySelector('.startButton');
+  buttonElement.innerHTML='Loading...';
+  setTimeout(
+    function(){
+      buttonElement.innerHTML='Finished!'
+    }, 1000
+  )
+}
+var intervalId;
+var isOnTimer = false;
+function changeStatus2(){ //12e
+
+document.querySelector('.notification').innerHTML='Added!';
+if(!isOnTimer){
+intervalId= setInterval(function(){
+document.querySelector('.notification').innerHTML='';
+isOnTimer=true;}
+,2000)}
+else{
+  clearInterval(intervalId);
+  document.querySelector('.notification').innerHTML='Added!';
+  intervalId= setInterval(function(){
+    document.querySelector('.notification').innerHTML='';
+    isOnTimer=true;}
+    ,2000)}
+}
+
+
+
+const oneLine = param => param+3;
+console.log(oneLine(3));
+
+/*let add=function(){
+  console.log(2+3);
+}
+
+function runTwice(func){
+func();
+func();
+}
+runTwice(function(){console.log('XDD')});*/
+
+
+
+</script>
+
+</body>
+
+
+
+
+
+
+
+
+</html>

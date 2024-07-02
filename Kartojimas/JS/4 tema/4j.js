@@ -1,0 +1,4 @@
+function AddedToCart () {
+  alert('Added');
+}
+

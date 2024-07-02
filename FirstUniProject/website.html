@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<link rel="stylesheet" href="general.css">
+
+<script src="everything.js">
+</script>
+
+<title>Namų darbas</title>
+
+</head>
+
+
+<body>
+
+  <header class="header">
+    
+    <img src="Icons/Schwarzas.jpg" class="fotke">
+
+    <button id="quit-button" onclick="closeWindow();">Quit</button>
+      
+    <div class="timetable">Tvarkaraštis
+    
+      <div id="dropdown">
+        <select id="daysDropdown" onchange="displayNodes()">
+          <option value="Monday">Pirmadienis</option>
+          <option value="Tuesday">Antradienis</option>
+          <option value="Wednesday">Trečiadienis</option>
+          <option value="Thursday">Ketvirtadienis</option>
+          <option value="Friday">Penktadienis</option>
+          <option value="Saturday">Šeštadienis</option>
+          <option value="Sunday">Sekmadienis</option>
+          <option value="WholeWeek">Visa savaitė</option>
+        </select>
+        </div>
+      </div>
+
+    <div class="client">Klientas
+    <input placeholder="Vardas" id="name"> 
+    <button id="search-button" onclick="searchClient();">Ieškoti</button> 
+    </div>
+
+    <button class="save" onclick="downloadJSON();">DownloadJSON</button>
+
+    <button class="AddTime" onclick="addNode();">Pridėti laiką</button>
+
+    <img src="Icons/Ronnie.jpg" class="fotke">
+  </header>
+
+  <main class="content">
+
+    
+  </main>
+
+
+  <script src="everything.js"></script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Styles/9j.css"> 
+    <script src="Scripts/9j.js"></script>
+  </head>
+  <body>
+    <p class="calculationDisplay"></p>
+    <p>
+      <button class="number"
+      onclick="
+        updateCalculation('1');
+        displayCalculation();
+      ">1</button>
+
+      <button class="number" onclick="
+        updateCalculation('2');
+        displayCalculation();
+      ">2</button>
+
+      <button class="number"
+      onclick="
+        updateCalculation('3');
+        displayCalculation();
+      ">3</button>
+
+      <button class="sign"
+      onclick="
+        updateCalculation(' + ');
+        displayCalculation();
+      ">+</button>
+    </p>
+
+    <p>
+      <button class="number"
+      onclick="
+        updateCalculation('4');
+        displayCalculation();
+      ">4</button>
+
+      <button class="number"
+      onclick="
+        updateCalculation('5');
+        displayCalculation();
+      ">5</button>
+
+      <button class="number"
+      onclick="
+        updateCalculation('6');
+        displayCalculation();
+      ">6</button>
+
+      <button class="sign"
+      onclick="
+        updateCalculation(' - ');
+        displayCalculation();
+      ">-</button>
+    </p>
+
+    <p>
+      <button class="number"
+      onclick="
+        updateCalculation('7');
+        displayCalculation();
+      ">7</button>
+
+      <button class="number"
+      onclick="
+        updateCalculation('8');
+        displayCalculation();
+      ">8</button>
+
+      <button class="number"
+      onclick="
+        updateCalculation('9');
+        displayCalculation();
+      ">9</button>
+
+      <button class="sign"
+      onclick="
+        updateCalculation(' * ');
+        displayCalculation();
+      ">*</button>
+    </p>
+
+    <p>
+      <button class="number"
+      onclick="
+        updateCalculation('0');
+        displayCalculation();
+      ">0</button>
+
+      <button class="number"
+      onclick="
+        updateCalculation('.');
+        displayCalculation();
+      ">.</button>
+
+      <button class="number"
+      onclick="
+        // Note: eval() takes a string and runs it as code.
+        // Avoid using eval() in real world projects since
+        // it can potentially be given harmful code to run.
+        // Only use eval() for learning purposes.
+        calculation = eval(calculation);
+        console.log(calculation);
+        displayCalculation();
+
+        // Remember to save the calculation here.
+        localStorage.setItem('calculation', calculation);
+      ">=</button>
+
+      <button class="sign"
+      onclick="
+        updateCalculation(' / ');
+        displayCalculation();
+      ">/</button>
+    </p>
+
+    <p>
+      <button class="number clear-button"
+      onclick="
+        calculation = '';
+        displayCalculation(calculation);
+        // Remember to save the calculation here.
+        localStorage.setItem('calculation', calculation);
+      ">Clear</button>
+    </p>
+
+  </body>
+</html>

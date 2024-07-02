@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>9 DOM Projektas mini</title>
+
+</head>
+
+
+<body>
+
+<p>Youtube Subscribe button</p>
+
+<button class="js-subscribe-button" onclick="subscribe();">Subscribe</button>
+
+<p>Rock Paper Scissors</p>
+
+<a>Click here</a>
+
+<p>Amazon shipping calculator</p>
+<p>Orders under $40 = +$10 shipping.</p>
+<p>Orders over $40 = FREE shipping.</p>
+<input type="text" placeholder="Cost of order" class="inputAmount" onkeydown="handleKeyDown(event);">
+<button onclick="calculatePrice();">Calculate</button>
+<p class="CostOfOrder"></p>
+<input type="text" placeholder="Input" class="onkeyup" onkeyup="handleKeyUp(event);">
+<p class="printedKey"></p>
+
+
+<script>
+
+  function handleKeyUp(event){
+    console.log(event.key);
+    document.querySelector('.printedKey').innerHTML=document.querySelector('.onkeyup').value;
+  }
+
+
+  function handleKeyDown(event){
+  if (event.key === 'Enter'){
+  calculatePrice();
+}
+  }
+
+  function subscribe(){
+  if(document.querySelector('.js-subscribe-button').innerHTML==='Subscribe')
+  document.querySelector('.js-subscribe-button').innerHTML='Subscribed';
+  else document.querySelector('.js-subscribe-button').innerHTML='Subscribe'
+}
+
+  function calculatePrice(){
+    let InputContainer = document.querySelector('.inputAmount');
+    let cost=Number(InputContainer.value);
+    if(cost<40){
+      cost+=10;
+      document.querySelector('.CostOfOrder').innerHTML=`Cost of order is: $${cost.toFixed(2)}.`;
+      }
+    
+    else document.querySelector('.CostOfOrder').innerHTML=`Cost of order is: $${cost.toFixed(2)}`;
+  }
+  
+
+
+  
+
+
+</script>
+
+
+
+</body>
+
+
+
+</html>

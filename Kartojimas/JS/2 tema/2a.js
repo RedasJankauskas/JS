@@ -1,0 +1,1 @@
+document.body.innerHTML = `The total cost of order is : ${10+3*8+5}`;

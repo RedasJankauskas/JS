@@ -1,0 +1,35 @@
+
+.header{
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: Arial;
+}
+
+.play-button{
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  border-color: white;
+  background-color: black;
+  border-width: 2px;
+  border-style: solid;
+  margin-right: 8px;
+}
+.play-emoji{
+  width: 60px;
+  height: 60px;
+}
+body{
+  background-color: black;
+}
+.footer-button{
+  padding: 7px 13px;
+  margin-right: 10px
+}
+.js-result,
+.js-moves,
+.js-score{
+  color: white;
+}

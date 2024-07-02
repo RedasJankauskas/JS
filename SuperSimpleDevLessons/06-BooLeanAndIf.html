@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+  5tema
+</title>
+
+<link rel="stylesheet" href="6tema.css">
+
+
+
+
+</head>
+
+<body>
+
+  <p>Adults Plain Cotton T-Shirt</p>
+  <p>Price: $7.99</p>
+  <button class="practice" onclick="AddQuantity(1);">Add to Cart</button>
+  <button class="practice1" onclick="console.log('Loading...'), alert('Purchased!')">Buy now</button>
+  <button onclick="AddQuantity(4)">+4</button>
+  <button onclick="AddQuantity(5)">+5</button>
+  <button onclick="AddQuantity(-1)">-1</button>
+  <button onclick="AddQuantity(-2)">-2</button>
+  <button onclick="AddQuantity(-3)">-3</button>
+
+<script>
+
+  let sum=0;
+  function AddQuantity(num){
+    if((sum+num)>10){
+      alert('The cart is full!');
+      return
+    }
+    if(sum+num<0){
+      alert('Not enough items in the cart');
+      return
+    }
+    else{
+    sum+=num;
+    console.log(`Number of items in cart: ${sum}`);}
+    
+  }
+  let name='Redas';
+  console.log(`My name is: ${name}`);
+  let cost=5+3+3+9;
+  console.log(`Cost of food: $${cost}`);
+  let tax=cost*0.1;
+  console.log(`Tax: $${tax}`);
+  let TotalCost=cost+tax;
+  console.log(`Total cost is: ${TotalCost}`);
+
+  let calculation='';
+
+</script>
+
+</body>
+
+
+
+</html>

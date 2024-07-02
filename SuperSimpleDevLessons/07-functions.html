@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+  7tema
+</title>
+
+</head>
+
+<body>
+
+  
+
+<script>
+
+  console.log(ConvertToFahrenheit(25));
+  console.log(ConvertToCelsius(86));
+  console.log(convertTemperature(86,'F'));
+  
+function ConvertToFahrenheit(celsius){
+  Fahrenheit=(celsius*9/5)+32;
+
+  return Fahrenheit;
+}
+function ConvertToCelsius(fahrenheit){
+  Celsius=(fahrenheit-32) * 5/9;
+
+  return Celsius;
+}
+function convertTemperature(degrees,unit){
+  if(unit==='C'){
+    return (ConvertToFahrenheit(degrees)+' F');
+  }
+  if(unit==='F'){
+    return (ConvertToCelsius(degrees)+' C');
+  }
+}
+
+</script>
+
+</body>
+
+
+
+</html>

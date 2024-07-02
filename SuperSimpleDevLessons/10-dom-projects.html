@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>10 DOM Projektas</title>
+
+<link rel="stylesheet" href="Styles/10-dom-projects.css">
+
+
+</head>
+
+
+<body>
+
+<p>Youtube Subscribe button</p>
+
+<button class="js-subscribe-button" onclick="subscribe();">Subscribe</button>
+
+
+
+<p class="shipping">Amazon shipping calculator</p>
+<p class="shipping">Orders under $40 = +$10 shipping.</p>
+<p class="shipping">Orders over $40 = FREE shipping.</p>
+<input type="text" placeholder="Cost of order" class="inputAmount" onkeydown="handleKeyDown(event);">
+<button onclick="calculatePrice();" class="calculateButton">Calculate</button>
+<p class="CostOfOrder"></p>
+
+
+<script>
+
+
+  function handleKeyDown(event){
+  console.log(event.key);
+  if (event.key === 'Enter'){
+  calculatePrice();
+}
+  }
+
+  function subscribe(){
+  if(document.querySelector('.js-subscribe-button').innerHTML==='Subscribe'){
+  document.querySelector('.js-subscribe-button').innerHTML='Subscribed';
+  document.querySelector('.js-subscribe-button').classList.add('is-subscribed');}
+  else {document.querySelector('.js-subscribe-button').innerHTML='Subscribe';
+  document.querySelector('.js-subscribe-button').classList.remove('is-subscribed');}
+}
+
+  function calculatePrice(){
+    document.querySelector('.CostOfOrder').classList.remove('textIfError');
+    let InputContainer = document.querySelector('.inputAmount');
+    let cost=Number(InputContainer.value);
+    if(cost<40 && cost>=0){
+      cost+=10;
+      document.querySelector('.CostOfOrder').innerHTML=`Cost of order is: $${cost}.`;
+      }
+    
+    else if (cost>=40) 
+    document.querySelector('.CostOfOrder').innerHTML=`Cost of order is: $${cost}`;
+
+    else{
+    document.querySelector('.CostOfOrder').classList.add('textIfError')
+    document.querySelector('.CostOfOrder').innerHTML='Error: cost cannot be less than $0';
+    }
+  }
+  
+
+
+  
+
+
+</script>
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,169 @@
+.body{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.header{
+  display: flex;
+  
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  justify-content: center;
+}
+#quit-button{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: red;
+  font-weight: bold;
+  cursor: pointer;
+  vertical-align: middle;
+  align-items: center;
+  margin-right: 20px;
+}
+.timetable {
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 80px;
+  margin-top: 35px;
+  background-color: rgb(74, 74, 253);
+  color: white;
+  width: 150px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+
+.save{
+  background-color: green;
+}
+
+#dropdown{
+  position: relative;
+  top: 15px;
+}
+
+.client,
+.save{
+  flex-wrap: wrap;
+  border: none;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.client{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(233, 101, 101);
+  border-radius: 10px;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 125px;
+}
+#daysDropdown{
+  padding: 7px;
+  border: none
+}
+
+.table-grid{
+  padding-top: 50px;
+  right: 20px;
+  left: 20px;
+  bottom: 0px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  row-gap: 40px;
+  column-gap: 20px;
+  padding-bottom: 30px;
+}
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 40px;
+  column-gap: 20px;
+  margin-top: 20px;
+}
+.table-element{
+  height: 100%;
+  padding: 10px;
+  border: solid;
+  border-width: 1px;
+  
+
+}
+.iconscontainer{
+  display: flex;
+  justify-content: right;
+}
+.edit-icon,
+.close-icon{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.edit-form{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  display: block;
+}
+.editInput{
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+#search-button{
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+#name{
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+.save{
+  height:50px;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  margin-top: 45px;
+  cursor: pointer;
+}
+.AddTime{
+  height:50px;
+  background-color: rgb(166, 79, 248);
+  color: white;
+  border: none;
+  margin-top: 45px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.fotke{
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  border: none;
+  object-fit: cover;
+  margin-left: 20px;
+  margin-right: 20px;
+}

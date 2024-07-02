@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>8a</title>
+</head>
+
+<body>
+
+<script>
+
+const product={
+  name: 'Basketbal',
+  price: 2095,
+  'delivery-time':'3 days'
+};
+const product1={
+  name: 'Basketball',
+  price: 2095,
+  'delivery-time':'4 days'
+};
+function compareProduct(product1, product2){
+if(product1.price<product2.price){
+  return product1;
+}
+else return product2;}
+console.log(compareProduct(product, product1));
+
+function isSameProduct(product1, product2){
+  if(product1.name===product2.name && product1.value===product2.value)
+  return true;
+  else return false;
+}
+  
+console.log(isSameProduct(product,product1));
+
+let zodis='SveIKi';
+let zodismazosiom=zodis.toLowerCase();
+console.log(zodismazosiom);
+
+</script>
+
+
+</body>
+
+</html>
